@@ -166,7 +166,7 @@ a:hover {
   place-items: center;
   background:
     linear-gradient(120deg, rgba(20, 26, 31, 0.74), rgba(17, 68, 83, 0.58)),
-    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1700&q=80") center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1700&q=80") center/cover no-repeat;
   color: #f6efe3;
   text-align: left;
   padding: 84px 0;
