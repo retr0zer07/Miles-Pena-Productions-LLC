@@ -931,3 +931,61 @@ textarea {
     height: 17px;
   }
 }
+
+/* ===== SPOTIFY EMBED ===== */
+.spotify-embed-wrap {
+  margin: 28px 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ===== STREAMING BUTTONS ===== */
+.streaming-links {
+  margin-top: 24px;
+}
+
+.streaming-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-streaming {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-streaming:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-spotify { background: #1DB954; }
+.btn-youtube-music { background: #FF0000; }
+.btn-apple { background: #fc3c44; }
+
+/* ===== A11Y BUTTON SVG FIX ===== */
+.floating-a11y-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-a11y-btn svg {
+  display: block;
+  flex-shrink: 0;
+}
