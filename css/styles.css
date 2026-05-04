@@ -978,7 +978,26 @@ textarea {
 .btn-youtube-music { background: #FF0000; }
 .btn-apple { background: #fc3c44; }
 
-/* ===== A11Y BUTTON SVG FIX ===== */
+/* ===== HOME PAGE UTILITY CLASSES ===== */
+.section-cta {
+  margin-top: 28px;
+}
+
+.featured-video-wrap {
+  max-width: 720px;
+  margin: 28px 0;
+}
+
+.process-step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-step-link {
+  margin-top: 12px;
+}
 .floating-a11y-btn {
   display: flex;
   align-items: center;
