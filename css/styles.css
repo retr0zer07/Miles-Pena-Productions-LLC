@@ -490,7 +490,7 @@ textarea {
   border-radius: 999px;
   width: 54px;
   height: 54px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   cursor: pointer;
   box-shadow: 0 10px 24px rgba(201, 146, 42, 0.4);
 }
@@ -864,5 +864,70 @@ textarea {
 
   .music-hero {
     min-height: 52vh;
+  }
+}
+
+/* ===== SOCIAL FLOATING BUTTONS ===== */
+.social-float {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  text-decoration: none;
+  transition: width 0.22s ease, background 0.2s ease, transform 0.2s ease;
+  border-radius: 0;
+}
+
+.social-btn:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.social-btn:last-child {
+  border-radius: 0 0 0 8px;
+}
+
+.social-btn:hover {
+  width: 54px;
+  transform: translateX(-4px);
+  text-decoration: none;
+}
+
+.social-youtube  { background: #FF0000; }
+.social-youtube:hover { background: #cc0000; }
+
+.social-spotify  { background: #1DB954; }
+.social-spotify:hover { background: #17a349; }
+
+.social-instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+.social-instagram:hover { filter: brightness(1.15); }
+
+.social-facebook { background: #1877F2; }
+.social-facebook:hover { background: #1464d8; }
+
+.social-tiktok   { background: #010101; border-top: 1px solid #222; }
+.social-tiktok:hover { background: #2c2c2c; }
+
+/* Reduce social buttons on very small screens */
+@media (max-width: 480px) {
+  .social-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .social-btn svg {
+    width: 17px;
+    height: 17px;
   }
 }
