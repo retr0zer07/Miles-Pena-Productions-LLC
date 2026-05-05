@@ -177,7 +177,7 @@ a:hover {
   place-items: center;
   background:
     linear-gradient(120deg, rgba(5, 5, 7, 0.82), rgba(20, 10, 2, 0.72)),
-    url("../img/hero.JPG") center/cover no-repeat;
+    url("../img/hero.JPG") center 30%/cover no-repeat;
   color: #f6efe3;
   text-align: left;
   padding: 84px 0;
@@ -629,7 +629,7 @@ textarea {
   place-items: center;
   background:
     linear-gradient(120deg, rgba(0, 0, 0, 0.82), rgba(10, 6, 0, 0.72)),
-    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1700&q=80") center/cover no-repeat;
+    url("../img/hero.JPG") center 30%/cover no-repeat;
   color: #f6efe3;
   text-align: left;
   padding: 84px 0;
