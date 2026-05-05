@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.milespenaproductions.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.milespenaproductions.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.milespenaproductions.com/music.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/music.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/music.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.milespenaproductions.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/contact.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.milespenaproductions.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/privacy.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.milespenaproductions.com/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/cookies.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-  </url>
-
-  <!-- Spanish versions -->
-  <url>
-    <loc>https://www.milespenaproductions.com/es/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.milespenaproductions.com/es/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.milespenaproductions.com/es/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.milespenaproductions.com/es/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.milespenaproductions.com/es/cookies.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
   </url>
 </urlset>

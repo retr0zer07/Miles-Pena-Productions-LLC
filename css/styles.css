@@ -158,6 +158,9 @@ a:hover {
   color: var(--muted);
   text-decoration: none;
   line-height: 1.8;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .lang-pill:hover,
@@ -174,7 +177,7 @@ a:hover {
   place-items: center;
   background:
     linear-gradient(120deg, rgba(5, 5, 7, 0.82), rgba(20, 10, 2, 0.72)),
-    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1700&q=80") center/cover no-repeat;
+    url("../img/hero.JPG") center/cover no-repeat;
   color: #f6efe3;
   text-align: left;
   padding: 84px 0;
@@ -360,6 +363,16 @@ a:hover {
   margin-top: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 2rem;
+}
+
+.artist-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  display: block;
 }
 
 label {

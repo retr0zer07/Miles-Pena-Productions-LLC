@@ -10,25 +10,30 @@
   <link rel="alternate" hreflang="en" href="https://www.milespenaproductions.com/privacy.html">
   <link rel="alternate" hreflang="es" href="https://www.milespenaproductions.com/es/privacy.html">
   <link rel="alternate" hreflang="x-default" href="https://www.milespenaproductions.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy — Miles Pena">
+  <meta property="og:image" content="https://www.milespenaproductions.com/img/foto.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.milespenaproductions.com/img/foto.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="privacy">
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="logo" href="index.html">Miles Pena Productions</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="main-nav is-hidden-mobile" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-i18n="nav.toggle">Menu</button>
+      <nav id="site-nav" class="main-nav is-hidden-mobile" aria-label="Main navigation" data-i18n-aria="nav.label">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="lang-switch-wrap">
-          <a class="lang-pill active" href="privacy.html" hreflang="en">EN</a>
-          <a class="lang-pill" href="es/privacy.html" hreflang="es">ES</a>
+          <button class="lang-pill" type="button" data-lang="es">ES</button>
+          <button class="lang-pill active" type="button" data-lang="en">EN</button>
         </div>
       </nav>
     </div>
@@ -36,19 +41,19 @@
 
   <main class="section">
     <div class="container card">
-      <h1>Privacy Policy</h1>
-      <p>Miles Pena Productions LLC respects your privacy and handles personal data responsibly.</p>
-      <h2>Information We Collect</h2>
+      <h1 data-i18n="privacy.h1">Privacy Policy</h1>
+      <p data-i18n="privacy.intro">Miles Pena Productions LLC respects your privacy and handles personal data responsibly.</p>
+      <h2 data-i18n="privacy.collect.h2">Information We Collect</h2>
       <ul>
-        <li>Contact details submitted by phone, WhatsApp, email, or web forms</li>
-        <li>Basic analytics data such as page visits and browser behavior</li>
+        <li data-i18n="privacy.collect.li1">Contact details submitted by phone, WhatsApp, email, or web forms</li>
+        <li data-i18n="privacy.collect.li2">Basic analytics data such as page visits and browser behavior</li>
       </ul>
-      <h2>How We Use Information</h2>
+      <h2 data-i18n="privacy.use.h2">How We Use Information</h2>
       <ul>
-        <li>Responding to inquiries and customer support requests</li>
-        <li>Improving website usability and communication quality</li>
+        <li data-i18n="privacy.use.li1">Responding to inquiries and customer support requests</li>
+        <li data-i18n="privacy.use.li2">Improving website usability and communication quality</li>
       </ul>
-      <h2>Contact For Privacy Requests</h2>
+      <h2 data-i18n="privacy.contact.h2">Contact For Privacy Requests</h2>
       <p>Email: <a href="mailto:milespena@gmail.com">milespena@gmail.com</a></p>
       <p>Phone: <a href="tel:+13053211040">+1 (305) 321-1040</a></p>
     </div>
@@ -62,18 +67,18 @@
         <p>Email: <a href="mailto:milespena@gmail.com">milespena@gmail.com</a></p>
       </div>
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4 data-i18n="footer.nav.title">Navigation</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h4 data-i18n="footer.legal.title">Legal</h4>
         <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="cookies.html" data-i18n="footer.cookies">Cookies Policy</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -86,28 +91,29 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>Copyright <span id="currentYear"></span> Miles Pena Productions LLC. All rights reserved.</p>
+      <p>Copyright <span id="currentYear"></span> Miles Pena Productions LLC. <span data-i18n="footer.copyright">All rights reserved.</span></p>
     </div>
   </footer>
 
-  <div id="cookie-banner" class="cookie-banner is-hidden" role="dialog" aria-live="polite" aria-label="Cookie notice">
-    <h3>Cookie Preferences</h3>
-    <p>We use cookies to improve performance, analyze traffic, and optimize your browsing experience.</p>
+  <div id="cookie-banner" class="cookie-banner is-hidden" role="dialog" aria-live="polite" aria-label="Cookie notice" data-i18n-aria="cookie.banner.aria">
+    <h3 data-i18n="cookie.title">Cookie Preferences</h3>
+    <p data-i18n="cookie.desc">We use cookies to improve performance, analyze traffic, and optimize your browsing experience.</p>
     <div class="cookie-actions">
-      <button id="cookie-accept" class="btn btn-primary" type="button">Accept</button>
-      <button id="cookie-reject" class="btn btn-tertiary" type="button">Reject</button>
+      <button id="cookie-accept" class="btn btn-primary" type="button" data-i18n="cookie.accept">Accept</button>
+      <button id="cookie-reject" class="btn btn-tertiary" type="button" data-i18n="cookie.reject">Reject</button>
     </div>
   </div>
 
-  <button id="a11y-toggle" class="floating-a11y-btn" type="button" aria-label="Accessibility options">A11Y</button>
-  <div id="a11y-panel" class="a11y-panel is-hidden" aria-label="Accessibility panel">
-    <h3>Accessibility</h3>
-    <button id="a11y-font-plus" class="btn btn-tertiary" type="button">Increase Text</button>
-    <button id="a11y-font-reset" class="btn btn-tertiary" type="button">Normal Text</button>
-    <button id="a11y-contrast" class="btn btn-tertiary" type="button">Toggle Contrast</button>
-    <button id="a11y-motion" class="btn btn-tertiary" type="button">Reduce Motion</button>
+  <button id="a11y-toggle" class="floating-a11y-btn" type="button" aria-label="Accessibility options" data-i18n-aria="a11y.toggle.aria">A11Y</button>
+  <div id="a11y-panel" class="a11y-panel is-hidden" aria-label="Accessibility panel" data-i18n-aria="a11y.panel.aria">
+    <h3 data-i18n="a11y.title">Accessibility</h3>
+    <button id="a11y-font-plus" class="btn btn-tertiary" type="button" data-i18n="a11y.font-plus">Increase Text</button>
+    <button id="a11y-font-reset" class="btn btn-tertiary" type="button" data-i18n="a11y.font-reset">Normal Text</button>
+    <button id="a11y-contrast" class="btn btn-tertiary" type="button" data-i18n="a11y.contrast">Toggle Contrast</button>
+    <button id="a11y-motion" class="btn btn-tertiary" type="button" data-i18n="a11y.motion">Reduce Motion</button>
   </div>
 
+  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

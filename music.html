@@ -13,7 +13,8 @@
   <meta property="og:title" content="Música — Miles Pena">
   <meta property="og:description" content="Descubre canciones, mira videos de conciertos y escucha las pistas de Miles Pena.">
   <meta property="og:url" content="https://www.milespenaproductions.com/music.html">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&q=80">
+  <meta property="og:image" content="https://www.milespenaproductions.com/img/foto.jpeg">
+  <meta name="twitter:image" content="https://www.milespenaproductions.com/img/foto.jpeg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Música — Miles Pena">
   <meta name="twitter:description" content="Descubre canciones, mira videos de conciertos y escucha las pistas de Miles Pena.">
@@ -22,21 +23,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="music">
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="logo" href="index.html">Miles Pena Productions</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menú</button>
-      <nav id="site-nav" class="main-nav is-hidden-mobile" aria-label="Navegación principal">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-i18n="nav.toggle">Menú</button>
+      <nav id="site-nav" class="main-nav is-hidden-mobile" aria-label="Navegación principal" data-i18n-aria="nav.label">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Nosotros</a></li>
-          <li><a class="active" href="music.html">Música</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Nosotros</a></li>
+          <li><a class="active" href="music.html" data-i18n="nav.music">Música</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
         <div class="lang-switch-wrap">
-          <a class="lang-pill active" href="music.html" hreflang="es">ES</a>
-          <a class="lang-pill" href="en/music.html" hreflang="en">EN</a>
+          <button class="lang-pill active" type="button" data-lang="es">ES</button>
+          <button class="lang-pill" type="button" data-lang="en">EN</button>
         </div>
       </nav>
     </div>
@@ -46,42 +47,42 @@
     <!-- Hero -->
     <section class="music-hero">
       <div class="hero-inner">
-        <span class="kicker">Discografía y Actuaciones en Vivo</span>
-        <h1 class="glow-text">El Sonido de Miles Pena</h1>
-        <p>Explora la música, siente el ritmo y vive la historia detrás de cada canción.</p>
+        <span class="kicker" data-i18n="music.hero.kicker">Discografía y Actuaciones en Vivo</span>
+        <h1 class="glow-text" data-i18n="music.hero.h1">El Sonido de Miles Pena</h1>
+        <p data-i18n="music.hero.p">Explora la música, siente el ritmo y vive la historia detrás de cada canción.</p>
       </div>
     </section>
 
     <!-- Descubre la Música -->
     <section id="discover" class="section discover-music">
       <div class="container">
-        <span class="kicker">Últimos Lanzamientos</span>
-        <h2>Descubre la Música</h2>
-        <p class="lead">Canciones que fusionan emoción genuina con el pulso de la Salsa Romántica.</p>
+        <span class="kicker" data-i18n="music.discover.kicker">Últimos Lanzamientos</span>
+        <h2 data-i18n="music.discover.h2">Descubre la Música</h2>
+        <p class="lead" data-i18n="music.discover.lead">Canciones que fusionan emoción genuina con el pulso de la Salsa Romántica.</p>
         <div class="song-cards-grid">
 
           <article class="song-card">
             <span class="track-num">01</span>
             <h3>Mis Labios Se Deshidratan</h3>
             <span class="tag-pill">Salsa Romántica</span>
-            <p>Una apasionada salsa romántica que captura el anhelo y el deseo.</p>
-            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=bRlSGQ5GrRk" target="_blank" rel="noopener" aria-label="Escuchar Mis Labios Se Deshidratan en YouTube">&#9654; Escuchar</a>
+            <p data-i18n="music.song1.desc">Una apasionada salsa romántica que captura el anhelo y el deseo.</p>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=bRlSGQ5GrRk" target="_blank" rel="noopener" aria-label="Escuchar Mis Labios Se Deshidratan en YouTube" data-i18n-aria="music.song1.aria" data-i18n-html="music.song1.btn">&#9654; Escuchar</a>
           </article>
 
           <article class="song-card">
             <span class="track-num">02</span>
             <h3>Mírame A La Cara</h3>
             <span class="tag-pill">Salsa Romántica</span>
-            <p>Una emotiva salsa romántica llena de sentimiento y alma.</p>
-            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=s2Vhk8m6Kjs" target="_blank" rel="noopener" aria-label="Escuchar Mírame A La Cara en YouTube">&#9654; Escuchar</a>
+            <p data-i18n="music.song2.desc">Una emotiva salsa romántica llena de sentimiento y alma.</p>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=s2Vhk8m6Kjs" target="_blank" rel="noopener" aria-label="Escuchar Mírame A La Cara en YouTube" data-i18n-aria="music.song2.aria" data-i18n-html="music.song2.btn">&#9654; Escuchar</a>
           </article>
 
           <article class="song-card">
             <span class="track-num">03</span>
             <h3>Me Dices Que Te Vas</h3>
             <span class="tag-pill">Salsa Romántica</span>
-            <p>Una emotiva salsa romántica sobre el amor y la despedida.</p>
-            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=7DCii536p6c" target="_blank" rel="noopener" aria-label="Escuchar Me Dices Que Te Vas en YouTube">&#9654; Escuchar</a>
+            <p data-i18n="music.song3.desc">Una emotiva salsa romántica sobre el amor y la despedida.</p>
+            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=7DCii536p6c" target="_blank" rel="noopener" aria-label="Escuchar Me Dices Que Te Vas en YouTube" data-i18n-aria="music.song3.aria" data-i18n-html="music.song3.btn">&#9654; Escuchar</a>
           </article>
 
         </div>
@@ -91,9 +92,9 @@
     <!-- Videos de Conciertos -->
     <section id="concerts" class="section concerts-section">
       <div class="container">
-        <span class="kicker">Actuaciones en Vivo</span>
-        <h2>Videos de Conciertos</h2>
-        <p class="lead">Mira a Miles actuar en vivo — energía pura, emoción real, momentos inolvidables.</p>
+        <span class="kicker" data-i18n="music.concerts.kicker">Actuaciones en Vivo</span>
+        <h2 data-i18n="music.concerts.h2">Videos de Conciertos</h2>
+        <p class="lead" data-i18n="music.concerts.lead">Mira a Miles actuar en vivo — energía pura, emoción real, momentos inolvidables.</p>
         <div class="concerts-grid">
 
           <div class="video-wrap">
@@ -121,16 +122,16 @@
           </div>
 
         </div>
-        <p class="video-note">Más videos disponibles en <a href="https://www.youtube.com/channel/UCPdHghPRPIyBuNaq2Lf9eHw" target="_blank" rel="noopener">YouTube</a>.</p>
+        <p class="video-note"><span data-i18n="music.concerts.more">Más videos disponibles en</span> <a href="https://www.youtube.com/channel/UCPdHghPRPIyBuNaq2Lf9eHw" target="_blank" rel="noopener">YouTube</a>.</p>
       </div>
     </section>
 
     <!-- Escucha en Spotify -->
     <section id="audio" class="section audio-section">
       <div class="container">
-        <span class="kicker">Escucha Ahora</span>
-        <h2>Canciones de Miles Pena</h2>
-        <p class="lead">Escucha los temas de Miles Peña en Spotify. Vista previa de 30 segundos sin cuenta — inicia sesión para escuchar completo.</p>
+        <span class="kicker" data-i18n="music.audio.kicker">Escucha Ahora</span>
+        <h2 data-i18n="music.audio.h2">Canciones de Miles Pena</h2>
+        <p class="lead" data-i18n="music.audio.lead">Escucha los temas de Miles Peña en Spotify. Vista previa de 30 segundos sin cuenta — inicia sesión para escuchar completo.</p>
         <div class="spotify-embed-wrap">
           <iframe
             src="https://open.spotify.com/embed/artist/1zXXeWOVa2tZqjcmoNXuMw?utm_source=generator&theme=0"
@@ -141,17 +142,18 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             title="Miles Pena en Spotify"
+            data-i18n-title="music.spotify.title"
             style="border-radius:12px;">
           </iframe>
         </div>
         <div class="streaming-links">
-          <p class="lead">También disponible en:</p>
+          <p class="lead" data-i18n="music.audio.also">También disponible en:</p>
           <div class="streaming-btns">
-            <a class="btn btn-streaming btn-spotify" href="https://open.spotify.com/artist/1zXXeWOVa2tZqjcmoNXuMw" target="_blank" rel="noopener" aria-label="Escuchar en Spotify">
+            <a class="btn btn-streaming btn-spotify" href="https://open.spotify.com/artist/1zXXeWOVa2tZqjcmoNXuMw" target="_blank" rel="noopener" aria-label="Escuchar en Spotify" data-i18n-aria="music.audio.spotify.aria">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
               Spotify
             </a>
-            <a class="btn btn-streaming btn-youtube-music" href="https://www.youtube.com/channel/UCPdHghPRPIyBuNaq2Lf9eHw" target="_blank" rel="noopener" aria-label="Ver en YouTube">
+            <a class="btn btn-streaming btn-youtube-music" href="https://www.youtube.com/channel/UCPdHghPRPIyBuNaq2Lf9eHw" target="_blank" rel="noopener" aria-label="Ver en YouTube" data-i18n-aria="music.audio.yt.aria">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               YouTube
             </a>
@@ -163,11 +165,11 @@
     <!-- CTA -->
     <section class="section">
       <div class="container cta-panel">
-        <h2 class="section-title">Reserva a Miles para tu Próximo Evento</h2>
-        <p>¿Quieres que Miles Pena actúe en tu evento? Escríbenos y hagámoslo realidad.</p>
+        <h2 class="section-title" data-i18n="music.cta.h2">Reserva a Miles para tu Próximo Evento</h2>
+        <p data-i18n="music.cta.p">¿Quieres que Miles Pena actúe en tu evento? Escríbenos y hagámoslo realidad.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="contact.html">Contáctanos</a>
-          <a class="btn btn-tertiary" href="mailto:milespena@gmail.com">Escribe a Miles</a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="music.cta.btn1">Contáctanos</a>
+          <a class="btn btn-tertiary" href="mailto:milespena@gmail.com" data-i18n="music.cta.btn2">Escribe a Miles</a>
         </div>
       </div>
     </section>
@@ -177,48 +179,48 @@
     <div class="container footer-grid">
       <div class="footer-col">
         <h4>Miles Pena Productions LLC</h4>
-        <p>Teléfono: <a href="tel:+17868665866">+1 (786) 866-5866</a></p>
-        <p>Preferido: <a href="tel:+13053211040">+1 (305) 321-1040</a></p>
-        <p>Correo: <a href="mailto:milespena@gmail.com">milespena@gmail.com</a></p>
+        <p><span data-i18n="footer.phone.label">Teléfono:</span> <a href="tel:+17868665866">+1 (786) 866-5866</a></p>
+        <p><span data-i18n="footer.preferred.label">Preferido:</span> <a href="tel:+13053211040">+1 (305) 321-1040</a></p>
+        <p><span data-i18n="footer.email.label">Correo:</span> <a href="mailto:milespena@gmail.com">milespena@gmail.com</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer.nav.title">Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Nosotros</a></li>
-          <li><a href="music.html">Música</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Nosotros</a></li>
+          <li><a href="music.html" data-i18n="nav.music">Música</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h4 data-i18n="footer.legal.title">Legal</h4>
         <ul>
-          <li><a href="privacy.html">Política de Privacidad</a></li>
-          <li><a href="cookies.html">Política de Cookies</a></li>
-          <li><button class="btn btn-tertiary manage-cookies" type="button">Gestionar Cookies</button></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Política de Privacidad</a></li>
+          <li><a href="cookies.html" data-i18n="footer.cookies">Política de Cookies</a></li>
+          <li><button class="btn btn-tertiary manage-cookies" type="button" data-i18n="footer.manage-cookies">Gestionar Cookies</button></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p>Copyright <span id="currentYear"></span> Miles Pena Productions LLC. Todos los derechos reservados. Horario: lunes a viernes, 10:00 - 17:00 ET. Consentimiento SMS: Sí.</p>
+      <p>Copyright <span id="currentYear"></span> Miles Pena Productions LLC. <span data-i18n="footer.copyright">Todos los derechos reservados.</span> <span data-i18n="footer.hours">Horario: lunes a viernes, 10:00 - 17:00 ET. Consentimiento SMS: Sí.</span></p>
     </div>
   </footer>
 
-  <div id="cookie-banner" class="cookie-banner is-hidden" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
-    <h3>Preferencias de Cookies</h3>
-    <p>Usamos cookies para mejorar el rendimiento, analizar el tráfico y optimizar tu experiencia de navegación.</p>
+  <div id="cookie-banner" class="cookie-banner is-hidden" role="dialog" aria-live="polite" aria-label="Aviso de cookies" data-i18n-aria="cookie.banner.aria">
+    <h3 data-i18n="cookie.title">Preferencias de Cookies</h3>
+    <p data-i18n="cookie.desc">Usamos cookies para mejorar el rendimiento, analizar el tráfico y optimizar tu experiencia de navegación.</p>
     <div class="cookie-actions">
-      <button id="cookie-accept" class="btn btn-primary" type="button">Aceptar</button>
-      <button id="cookie-reject" class="btn btn-tertiary" type="button">Rechazar</button>
-      <a class="btn btn-tertiary" href="cookies.html">Más info</a>
+      <button id="cookie-accept" class="btn btn-primary" type="button" data-i18n="cookie.accept">Aceptar</button>
+      <button id="cookie-reject" class="btn btn-tertiary" type="button" data-i18n="cookie.reject">Rechazar</button>
+      <a class="btn btn-tertiary" href="cookies.html" data-i18n="cookie.more">Más info</a>
     </div>
   </div>
 
   <!-- Social floating buttons -->
-  <div class="social-float" aria-label="Seguir a Miles en redes sociales">
+  <div class="social-float" aria-label="Seguir a Miles en redes sociales" data-i18n-aria="social.float.aria">
     <a class="social-btn social-youtube" href="https://www.youtube.com/channel/UCPdHghPRPIyBuNaq2Lf9eHw" target="_blank" rel="noopener" aria-label="YouTube">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
     </a>
@@ -236,15 +238,16 @@
     </a>
   </div>
 
-  <button id="a11y-toggle" class="floating-a11y-btn" type="button" aria-label="Opciones de accesibilidad"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-9 7c-1.1 0-2-.9-2-2v-6H6v-2h2V9.09c0-.06.01-.12.01-.18L6.97 8.63C6.38 8.24 5.59 8.4 5.2 9L3 12h2l1.88 3.28C7.27 16.33 8.09 17 9 17v3z"/></svg></button>
-  <div id="a11y-panel" class="a11y-panel is-hidden" aria-label="Panel de accesibilidad">
-    <h3>Accesibilidad</h3>
-    <button id="a11y-font-plus" class="btn btn-tertiary" type="button">Aumentar Texto</button>
-    <button id="a11y-font-reset" class="btn btn-tertiary" type="button">Texto Normal</button>
-    <button id="a11y-contrast" class="btn btn-tertiary" type="button">Contraste</button>
-    <button id="a11y-motion" class="btn btn-tertiary" type="button">Reducir Movimiento</button>
+  <button id="a11y-toggle" class="floating-a11y-btn" type="button" aria-label="Opciones de accesibilidad" data-i18n-aria="a11y.toggle.aria"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-9 7c-1.1 0-2-.9-2-2v-6H6v-2h2V9.09c0-.06.01-.12.01-.18L6.97 8.63C6.38 8.24 5.59 8.4 5.2 9L3 12h2l1.88 3.28C7.27 16.33 8.09 17 9 17v3z"/></svg></button>
+  <div id="a11y-panel" class="a11y-panel is-hidden" aria-label="Panel de accesibilidad" data-i18n-aria="a11y.panel.aria">
+    <h3 data-i18n="a11y.title">Accesibilidad</h3>
+    <button id="a11y-font-plus" class="btn btn-tertiary" type="button" data-i18n="a11y.font-plus">Aumentar Texto</button>
+    <button id="a11y-font-reset" class="btn btn-tertiary" type="button" data-i18n="a11y.font-reset">Texto Normal</button>
+    <button id="a11y-contrast" class="btn btn-tertiary" type="button" data-i18n="a11y.contrast">Contraste</button>
+    <button id="a11y-motion" class="btn btn-tertiary" type="button" data-i18n="a11y.motion">Reducir Movimiento</button>
   </div>
 
+  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
